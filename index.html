@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- This is are called meta tags, you can google about them but we'll still talk about them in class
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to Font Awesome CDN. These are comments and have no effect on the output of this code. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Home section with text on the left and circular image on the right -->
+        <section id="home" class="section-container">
+            <div class="content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>This is the home section where you introduce yourself.</p>
+            </div>
+            <div class="image">
+                <img src="img1.png" alt="Profile Picture"> <!--Image tag.This is how images are added on the website.-->
+            </div>
+        </section>
+
+        <!-- About section with subtopics in card format -->
+        <section id="about" class="section-container">
+            <h1>About Me</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Education</h2>
+                    <p>Details about your education background.</p>
+                </div>
+                <div class="card">
+                    <h2>Hobbies</h2>
+                    <p>Information about your hobbies and interests.</p>
+                </div>
+                <div class="card">
+                    <h2>Career</h2>
+                    <p>Overview of your career and professional experience.</p>
+                </div>
+            </div>
+            <p><a href="#more-about">Read more</a> for further information.</p>
+        </section>
+
+        <!-- Contact section with a contact form and social media links -->
+        <section id="contact" class="section-container">
+            <h1>Contact</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <div class="contact-details">
+                <p>Phone: +1234567890</p>
+                <p>Email: your.email@example.com</p>
+                <p>Follow me on:</p>
+                <ul>
+                    <!--I've introduced i tags, basically used for creatng icons -->
+                    <li><a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script src="script.js"></script>
+</body>
+</html>
